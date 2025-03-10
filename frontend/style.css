@@ -1,0 +1,44 @@
+.container{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(255, 0, 157);
+    width: 500px;
+    height: 500px;
+    border-radius: 10px;
+    margin-top: 150px;
+}
+
+.email{
+    margin: 10px;
+    height: 20px;
+    width: 250px;
+}
+
+.senha{
+    margin: 10px;
+    height: 20px;
+    width: 250px;
+}
+
+.btn{
+    width: 100px;
+    height: 35px;
+    border-radius: 8px;
+    background-color: rgb(179, 255, 0);
+    color: black;
+    cursor: pointer;
+}
+
+input{
+    background-color: rgb(0, 68, 255);
+}
+
+body{
+    background-color: rgb(0, 255, 115);
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+}
