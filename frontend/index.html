@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -8,12 +8,87 @@
 </head>
 <body>
     <div class="container">
-        <input type="email" placeholder="coloque o email" class="email" id="email">
-        <input type="password" placeholder="coloque a senha" class="senha" id="senha">
+        <h1>Login</h1>
+
+        <label for="email">Email</label>
+        <input type="email" placeholder="coloque o email" class="email" id="email" required>
+        <label for="senha">Senha</label>
+        <input type="password" placeholder="coloque a senha" class="senha" id="senha" required>
 
         <button class="btn" id="btn" onclick="enviar()">enviar</button>
+
+        <div class="sucesso" id="sucesso">
+            Login realizado com sucesso!
     </div>
 
+    <div class="error" id="error">
+        Email ou Senha incorretos!
+</div>
+
+<div class="vazio" id="vazio">
+    Campos inválidos!
+</div>
+
+    </div>
+       
     <script src="app.js"></script>
+</body>
+</html> -->
+
+<!--CORREÇÃO-->
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+</head>
+
+<style>
+    body{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        flex-direction: column;
+    }
+
+    #formulario{
+        display: flex;
+        flex-direction: column;
+        padding: 50px;
+        width: 500px;
+        background-color: cadetblue;
+        border-radius: 10px;
+    }
+
+    #sucesso{
+        display: none;
+    }
+
+</style>
+
+<body>
+    
+    <form id="formulario">
+        <label for="email">email</label>
+        <input type="email" id="email" required>
+        <label for="senha">senha</label>
+        <input type="text" id="senha" required>
+        <input type="submit" value="Login" id="Login">
+    </form>
+
+    <div class="sucesso">
+        Login realizado com sucesso!
+    </div>
+
+    <script>
+        document.getElementById('login').addEventListener('submit', function(event){
+            event.preventDefault();
+            document.getElementById('sucesso').style.display = 'block';
+        })
+    </script>
+
 </body>
 </html>

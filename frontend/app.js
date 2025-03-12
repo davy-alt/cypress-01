@@ -1,30 +1,31 @@
 
-const resetForm = () => {
-    //Reseta os campos preenchidos após cadastrar um item
-    document.getElementById("email").value = "";
-    document.getElementById("senha").value = "";
-  };
+// const resetForm = () => {
+//     //Reseta os campos preenchidos após cadastrar um item
+//     document.getElementById("email").value = "";
+//     document.getElementById("senha").value = "";
+//   };
 
-function enviar(){
+// function enviar(){
 
-   const email = "davy.nicacio@aluno.senai.br"
-   const senha = "1234567"
+//    const email = "davy.nicacio@aluno.senai.br"
+//    const senha = "1234567"
 
-   const emailpre = document.getElementById('email').value
-   const senhapre = document.getElementById ('senha').value
+//    const emailpre = document.getElementById('email').value
+//    const senhapre = document.getElementById ('senha').value
 
-   if(email === emailpre && senha === senhapre){
+//    if(email === emailpre && senha === senhapre){
+//     document.getElementById("sucesso").style.display = "block"
+//    }else{
+//     alert("Email incorreto ou senha incorreto")
+//       document.getElementById("error").style.display = "block"
+//    }
 
-   }else{
-    alert("Email incorreto ou senha incorreto")
+//    if(senhapre === "" && emailpre === ""){
+//     alert("campo vazio")
+//      document.getElementById("vazio").style.display = "block"
+//    }else{
     
-   }
+//    }
 
-   if(senhapre === "" && emailpre === ""){
-    alert("campo vazio")
-   }else{
-    
-   }
-
-}
+// }
    

@@ -3,21 +3,20 @@
     justify-content: center;
     display: flex;
     flex-direction: column;
-    background-color: rgb(255, 0, 157);
-    width: 500px;
+    background-color: #f0f8ff;
+    width: 300px;
     height: 500px;
     border-radius: 10px;
     margin-top: 150px;
+    gap: 10px;
 }
 
 .email{
-    margin: 10px;
     height: 20px;
     width: 250px;
 }
 
 .senha{
-    margin: 10px;
     height: 20px;
     width: 250px;
 }
@@ -26,19 +25,44 @@
     width: 100px;
     height: 35px;
     border-radius: 8px;
-    background-color: rgb(179, 255, 0);
-    color: black;
+    background-color: #1e90ff;
+    color: white;
+    border: #011325 solid 1.725px;
+}
+
+.btn:hover{
     cursor: pointer;
+    background-color: #fff;
+    color: #1e90ff;
+    border: #1e90ff 1px solid;
+    transition: 0.3s;
 }
 
 input{
-    background-color: rgb(0, 68, 255);
+    background-color: #fff;
+    border: #dcdcdc solid 1px;
+    border-radius: 5px;
 }
 
 body{
-    background-color: rgb(0, 255, 115);
     align-items: center;
     justify-content: center;
     display: flex;
     flex-direction: column;
+}
+
+h1{
+    color: #1e90ff;
+}
+
+.sucesso{
+    display: none;
+}
+
+.error{
+    display: none;
+}
+
+.vazio{
+    display: none;
 }
